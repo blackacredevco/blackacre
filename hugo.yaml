@@ -14,7 +14,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Blackacre Website
+  title: Blackacre Development Company LLC
   description: "Corporate Website of Blackacre Development Company"
   keywords: [Blog, Portfolio, Landing Page, Blackacre]
   author: ["Blackacre Development Company LLC", "MH"]
@@ -68,8 +68,8 @@ params:
         url: tags
 
   homeInfoParams:
-    Title: "Blog"
-    Content: Blackacre Blog Posts
+    Title: "Blackacre Development Company LLC"
+    Content: "Real Estate and Software Development"
 
   socialIcons:
     - name: x
@@ -111,18 +111,26 @@ params:
 
 menu:
   main:
+    - identifier: services
+      name: services
+      url: /services/
+      weight: 10
+    - identifier: blog
+      name: blog
+      url: /posts/
+      weight: 20
     - identifier: categories
       name: categories
       url: /categories/
-      weight: 10
+      weight: 30
     - identifier: tags
       name: tags
       url: /tags/
-      weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
+      weight: 40
+    - identifier: contact
+      name: contact
+      url: /contact/
+      weight: 50
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
