@@ -1,7 +1,7 @@
 baseURL: "https://blackacredevco.com/"
-title: Blackacre Site
+title: Blackacre Development Company LLC
 paginate.pagerSize: 5
-copyright: "© Blackacre Development Company LLC. All Rights Reserved. 2024-2026"
+copyright: "© Blackacre Development Company LLC | 2024-2026 | All Rights Reserved."
 theme: PaperMod
 enableRobotsTXT: true
 buildDrafts: false
@@ -17,7 +17,7 @@ params:
   title: Blackacre Development Company LLC
   description: "Corporate Website of Blackacre Development Company"
   keywords: [Blog, Portfolio, Landing Page, Blackacre]
-  author: ["Blackacre Development Company LLC", "MH"]
+  author: ["Blackacre Development Company LLC"]
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: dark
@@ -49,13 +49,13 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
+    text: "Blackacre Development Company LLC"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
   profileMode:
     enabled: false # needs to be explicitly set
-    title: Blackacre Development Company LLC
+    title: ""
     subtitle: "This is subtitle"
     imageUrl: "<img location>"
     imageWidth: 120
@@ -111,24 +111,24 @@ params:
 
 menu:
   main:
-    - identifier: services
-      name: services
+    - identifier: Services
+      name: Services
       url: /services/
       weight: 10
-    - identifier: blog
-      name: blog
+    - identifier: Blog
+      name: Blog
       url: /posts/
       weight: 20
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - identifier: Projects
+      name: Projects
+      url: /projects/
       weight: 30
-    - identifier: tags
-      name: tags
-      url: /tags/
+    - identifier: Team
+      name: Team
+      url: /team/
       weight: 40
-    - identifier: contact
-      name: contact
+    - identifier: Contact
+      name: Contact
       url: /contact/
       weight: 50
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
