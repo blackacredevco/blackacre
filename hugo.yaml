@@ -1,9 +1,8 @@
 baseURL: "https://blackacredevco.com/"
 title: Blackacre Site
-paginate: 5
+paginate.pagerSize: 5
 copyright: "© Blackacre Development Company LLC. All Rights Reserved. 2024-2026"
 theme: PaperMod
-
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
