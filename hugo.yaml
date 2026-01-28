@@ -15,7 +15,7 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Blackacre Development Company LLC
-  description: "Corporate Website of Blackacre Development Company"
+  description: ""
   keywords: [Blackacre, Blog, Landing Page, Portfolio]
   author: ["Blackacre Development Company LLC"]
   images: ["<link or path of image for opengraph, twitter-cards>"]
