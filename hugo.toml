@@ -51,7 +51,7 @@ theme = 'mana'
   # Info for the copyright notice in the footer.
   [params.copyright]
     # Set this if you want a range, rather than just the current year (as of the last time you ran "hugo build").
-    startYear = 2026
+    #startYear = 2026
     # Set this if you don't want the copyright owner to be the same value as the "title" field above.
     owner = "Blackacre Development Company LLC"
   

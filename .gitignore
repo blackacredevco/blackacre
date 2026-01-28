@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+target/
+.venv/
+venv/
+/.vscode/
+*.log
+npm-debug.log*
+*.tmp
+*.bak
+__pycache__/
+.env
+secrets.json
+config.json
+*.sqlite
