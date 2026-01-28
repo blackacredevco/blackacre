@@ -58,12 +58,10 @@ params:
     title: "Blackacre (noun): a placeholder designation for a hypothetical or fictitious parcel of real property."
     subtitle: "Our mission is to develop the dreams of our built environment into a reality."
     imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
+    imageWidth: 90
+    imageHeight: 90
     imageTitle: logo
     buttons:
-      - name: About
-        url: "/about"
       - name: Services
         url: "/services"
       - name: Projects
@@ -132,4 +130,4 @@ markup:
     codeFences: true
     guessSyntax: true
     # lineNos: true
-    style: catppuccin-mocha
+    style: darcula
