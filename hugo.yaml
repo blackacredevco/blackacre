@@ -1,5 +1,5 @@
 baseURL: "https://blackacredevco.com/"
-title: Blackacre Development Company LLC
+title: Blackacre Development Company
 paginate.pagerSize: 5
 copyright: "© Blackacre Development Company LLC | 2024-2026 | All Rights Reserved."
 theme: PaperMod
@@ -14,7 +14,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Blackacre Development Company LLC
+  title: Blackacre Development Company
   description: ""
   keywords: [Blackacre, Blog, Landing Page, Portfolio]
   author: ["Blackacre Development Company LLC"]
@@ -54,22 +54,22 @@ params:
     iconHeight: 35
 
   profileMode:
-    enabled: true # needs to be explicitly set
-    title: ""
-    subtitle: "This is subtitle"
+    enabled: true
+    title: "Blackacre (noun): a placeholder designation for a hypothetical or fictitious parcel of real property."
+    subtitle: "Our mission is to develop the dreams of our built environment into a reality."
     imageUrl: "<img location>"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: my image
+    imageTitle: logo
     buttons:
       - name: About
         url: "/about"
+      - name: Services
+        url: "/services"
+      - name: Projects
+        url: "/projects"        
       - name: Blog
         url: "/posts"
-
-  homeInfoParams:
-    Title: "Blackacre Development Company LLC"
-    Content: "Real Estate and Software Development"
 
   socialIcons:
     - name: email
