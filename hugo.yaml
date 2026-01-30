@@ -23,7 +23,7 @@ params:
   defaultTheme: dark
   disableThemeToggle: false
 
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
@@ -113,10 +113,14 @@ menu:
       name: Blog
       url: /posts/
       weight: 20
-    - identifier: Projects
-      name: Projects
-      url: /projects/
+    - identifier: Services
+      name: Services
+      url: /services/
       weight: 30
+    - identifier: Gallery
+      name: Gallery
+      url: /gallery/
+      weight: 40
     - identifier: Contact
       name: Contact
       url: /contact/
