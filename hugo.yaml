@@ -1,7 +1,7 @@
 baseURL: "https://blackacredevco.com/"
 title: Blackacre Development Company
 paginate.pagerSize: 5
-copyright: "© Blackacre Development Company LLC | 2024-2026 | All Rights Reserved."
+copyright: "© 2024-2026 | Blackacre Development Company LLC | All Rights Reserved."
 theme: PaperMod
 enableRobotsTXT: true
 buildDrafts: false
@@ -55,8 +55,8 @@ params:
 
   profileMode:
     enabled: true
-    title: "Blackacre (noun): a placeholder designation for a hypothetical or fictitious parcel of real property."
-    subtitle: "Our mission is to develop the dreams of our built environment into a reality."
+    title: "Blackacre (noun): a hypothetical or fictitious parcel of real property."
+    subtitle: "Our mission is to develop dreams of the built environment into reality."
     imageUrl: "<img location>"
     imageWidth: 90
     imageHeight: 90
@@ -64,8 +64,8 @@ params:
     buttons:
       - name: Services
         url: "/services"
-      - name: Projects
-        url: "/projects"        
+      - name: Gallery
+        url: "/gallery"        
       - name: Blog
         url: "/posts"
 
@@ -77,17 +77,13 @@ params:
     - name: github
       url: "https://github.com/blackacredevco"
 
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-
   cover:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/blackacredevco/blackacre/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
