@@ -104,18 +104,6 @@ menu:
     - identifier: About
       name: About
       url: /about/
-      weight: 10
-    - identifier: Blog
-      name: Blog
-      url: /posts/
-      weight: 20
-    - identifier: Services
-      name: Services
-      url: /services/
-      weight: 30
-    - identifier: Gallery
-      name: Gallery
-      url: /gallery/
       weight: 40
     - identifier: Contact
       name: Contact
