@@ -29,33 +29,33 @@
 
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 
-{{- if site.Params.ShowAllPagesInArchive }}
+{{- if site.Params.ShowAllPagesInblog }}
 {{- $pages = site.RegularPages }}
 {{- end }}
 
 {{- range $pages.GroupByPublishDate "2006" }}
 {{- if ne .Key "0001" }}
-<div class="archive-year">
+<div class="blog-year">
   {{- $year := replace .Key "0001" "" }}
-  <h2 class="archive-year-header" id="{{ $year }}">
-    <a class="archive-header-link" href="#{{ $year }}">
+  <h2 class="blog-year-header" id="{{ $year }}">
+    <a class="blog-header-link" href="#{{ $year }}">
       {{- $year -}}
     </a>
-    <sup class="archive-count">&nbsp;{{ len .Pages }}</sup>
+    <sup class="blog-count">&nbsp;{{ len .Pages }}</sup>
   </h2>
   {{- range .Pages.GroupByDate "January" }}
-  <div class="archive-month">
-    <h3 class="archive-month-header" id="{{ $year }}-{{ .Key }}">
-      <a class="archive-header-link" href="#{{ $year }}-{{ .Key }}">
+  <div class="blog-month">
+    <h3 class="blog-month-header" id="{{ $year }}-{{ .Key }}">
+      <a class="blog-header-link" href="#{{ $year }}-{{ .Key }}">
         {{- .Key -}}
       </a>
-      <sup class="archive-count">&nbsp;{{ len .Pages }}</sup>
+      <sup class="blog-count">&nbsp;{{ len .Pages }}</sup>
     </h3>
-    <div class="archive-posts">
+    <div class="blog-posts">
       {{- range .Pages }}
       {{- if eq .Kind "page" }}
-      <div class="archive-entry">
-        <h3 class="archive-entry-title entry-hint-parent">
+      <div class="blog-entry">
+        <h3 class="blog-entry-title entry-hint-parent">
           {{- .Title | markdownify }}
           {{- if .Draft }}
           <span class="entry-hint" title="Draft">
@@ -66,7 +66,7 @@
           </span>
           {{- end }}
         </h3>
-        <div class="archive-meta">
+        <div class="blog-meta">
           {{- partial "post_meta.html" . -}}
         </div>
         <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
