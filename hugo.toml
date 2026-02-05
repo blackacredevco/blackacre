@@ -4,6 +4,12 @@
 suffixes = ["xml"]
 
 # Hugo
+[markup.highlight]
+noclasses = false
+style = "github"
+
+[[module.imports]]
+path = "github.com/willfaught/paige"
 
 [module.hugoversion]
 min = "0.141.0"
