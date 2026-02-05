@@ -1,121 +1,76 @@
-baseURL: "https://blackacredevco.com/"
-title: Blackacre Development Company
-paginate.pagerSize: 5
-copyright: "© 2024-2026 | Blackacre Development Company LLC | All Rights Reserved."
-theme: Paige
-enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
-
-minify:
-  disableXML: true
-  minifyOutput: true
-
-params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Blackacre Development Company
-  description: ""
-  keywords: [Blackacre, Blog, Landing Page, Portfolio]
-  author: ["Blackacre Development Company LLC"]
-  images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
-  defaultTheme: dark
-  disableThemeToggle: false
-
-  ShowReadingTime: false
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: false
-  ShowCodeCopyButtons: false
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: true
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
-
-  assets:
-    disableHLJS: true # to disable highlight.js
-    disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
-
-  label:
-    text: "Blackacre Development Company"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
-
-  profileMode:
-    enabled: true
-    title: "Blackacre (noun): a hypothetical or fictitious parcel of real property."
-    subtitle: "Our mission is to develop dreams of the built environment into reality."
-    imageUrl: "<img location>"
-    imageWidth: 90
-    imageHeight: 90
-    imageTitle: logo
-    buttons:
-      - name: Services
-        url: "/services"
-      - name: Gallery
-        url: "/gallery"        
-      - name: Blog
-        url: "/posts"
-
-  socialIcons:
-    - name: email
-      url: "info@blackacredevco.com"
-    - name: phone
-      url: "(212) 867-5309"
-    - name: github
-      url: "https://github.com/blackacredevco"
-
-  cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
-
-  editPost:
-    URL: "https://github.com/blackacredevco/blackacre/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
-
-  # for search
-  # https://fusejs.io/api/options.html
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
-    keys: ["title", "permalink", "summary", "content"]
-
-menu:
-  main:
-    - identifier: About
-      name: About
-      url: /about/
-      weight: 40
-    - identifier: Contact
-      name: Contact
-      url: /contact/
-      weight: 50
-
-pygmentsUseClasses: true
-markup:
-  highlight:
-    #noClasses: false
-    # anchorLineNos: true
-    codeFences: true
-    guessSyntax: true
-    # lineNos: true
-    style: darcula
+mediatypes:
+  application/atom+xml:
+    suffixes:
+      - xml
+module:
+  hugoversion:
+    min: 0.141.0
+    extended: true
+  mounts:
+    - source: archetypes
+      target: archetypes
+    - source: assets
+      target: assets
+    - source: content
+      target: content
+    - source: data
+      target: data
+    - source: i18n
+      target: i18n
+    - source: layouts
+      target: layouts
+    - source: static
+      target: static
+    - source: paige/node_modules/bootstrap/dist/css
+      target: assets/css/paige/bootstrap
+      includefiles:
+        - bootstrap.css
+    - source: paige/node_modules/bootstrap/dist/js
+      target: assets/js/paige/bootstrap
+      includefiles:
+        - bootstrap.bundle.js
+    - source: paige/node_modules/bootstrap/js/dist
+      target: assets/js/paige/bootstrap
+    - source: paige/node_modules/bootstrap/scss
+      target: assets/css/paige/bootstrap
+    - source: paige/node_modules/bootstrap-icons/font/fonts
+      target: static/css/paige/bootstrap-icons/fonts
+    - source: paige/node_modules/bootstrap-icons/font
+      target: assets/css/paige/bootstrap-icons
+      includefiles:
+        - bootstrap-icons.css
+    - source: paige/node_modules/flexsearch/dist
+      target: assets/js/paige/flexsearch
+      includefiles:
+        - flexsearch.bundle.min.js
+    - source: paige/node_modules/katex/dist/contrib
+      target: assets/js/paige/katex
+      includefiles:
+        - auto-render.min.js
+    - source: paige/node_modules/katex/dist/fonts
+      target: static/css/paige/katex/fonts
+    - source: paige/node_modules/katex/dist
+      target: assets/css/paige/katex
+      includefiles:
+        - katex.min.css
+    - source: paige/node_modules/katex/dist
+      target: assets/js/paige/katex
+      includefiles:
+        - katex.min.js
+outputformats:
+  atom:
+    basename: atom
+    isplaintext: true
+    mediatype: application/atom+xml
+    name: atom
+  rss:
+    basename: rss
+    isplaintext: true
+    mediatype: application/rss+xml
+    name: rss
+  paige-search:
+    basename: paige-search
+    isplaintext: true
+    mediatype: application/json
+    name: paige-search
+    notalternative: true
