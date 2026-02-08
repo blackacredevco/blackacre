@@ -1,9 +1,0 @@
----
-baseURL: "https://blackacredevco.com/"
-title: Blackacre Development Company
-copyright: "© 2024-2026 | Blackacre Development Company LLC | All Rights Reserved."
-theme: sans
----
-module:
-  module.imports:
-    path: "github.com/psugam/sans"
