@@ -1,17 +1,5 @@
-baseURL: "https://blackacredevco.com"
 title: Blackacre Development Company
-enableRobotsTXT: true
-module:
-  hugoVersion:
-    extended: true
-    min: "0.146.0"
-  imports:
-    - path: github.com/imfing/hextra
-defaultContentLanguage: en
-languages:
-  en:
-    languageName: English
-    weight: 1
+theme: hextra
 
 markup:
   goldmark:
@@ -19,14 +7,6 @@ markup:
       unsafe: true
   highlight:
     noClasses: false
-    extensions:
-      passthrough:
-        delimiters:
-          block: [['\[', '\]'], ['$$', '$$']]
-          inline: [['\(', '\)']]
-        enable: true
-
-enableInlineShortcodes: true
 
 menu:
   main:
@@ -61,6 +41,9 @@ params:
   footer:
     displayCopyright: true
     displayPoweredBy: false
+  editURL:
+    enable: true
+    base: "https://blackacredevco.com"
   theme:
     default: dark
     displayToggle: true
