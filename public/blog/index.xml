@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blackacre Development Company – </title>
+    <title>Blackacre Development Company – The Blackacre Blog</title>
     <link>http://localhost:1313/blog/</link>
-    <description>Recent content on Blackacre Development Company</description>
+    <description>Recent content in The Blackacre Blog on Blackacre Development Company</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
@@ -13,6 +13,19 @@
         
       
     
+    
+    <item>
+      <title>Overview of the Real Estate Development Process</title>
+      <link>http://localhost:1313/blog/posts/one/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/posts/one/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
     
   </channel>
 </rss>
