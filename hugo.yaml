@@ -1,12 +1,11 @@
 baseURL: "https://blackacredevco.com"
 title: Blackacre Development Company
 enableRobotsTXT: true
+theme: hextra
 module:
   hugoVersion:
     extended: true
     min: "0.146.0"
-  imports:
-    - path: github.com/imfing/hextra
 defaultContentLanguage: en
 languages:
   en:
@@ -64,4 +63,9 @@ params:
   theme:
     default: dark
     displayToggle: true
+  blog:
+    list:
+      displayTags: true
+  toc:
+    displayTags: true
 
